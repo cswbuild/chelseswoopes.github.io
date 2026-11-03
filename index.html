@@ -18,7 +18,7 @@ layout: default
   </div>
 </section>
 <section id="news" class="news"><div class="section-head"><h2>News</h2></div><ul class="news-list">{% for item in site.data.news %}<li><time>{{ item.date }}</time><span>{{ item.text }}</span></li>{% endfor %}</ul></section>
-<section id="publications"><div class="section-head"><h2>Publications & research</h2><p>Selected work across human–AI interaction, scientific communication, law, and usable privacy.</p></div>
+<section id="publications"><div class="section-head"><h2>Publications & research</h2><p>Selected work across human–AI interaction, theory driven interface design, law, and usable security and privacy.</p></div>
 <div class="filter-row" aria-label="Publication filters"><button class="filter active" data-filter="all" aria-pressed="true">All</button><button class="filter" data-filter="conference" aria-pressed="false">Conferences</button><button class="filter" data-filter="workshop" aria-pressed="false">Workshops</button><button class="filter" data-filter="poster" aria-pressed="false">Posters</button></div>
 <div class="publication-list">{% for pub in site.data.publications %}
 <article class="publication" data-type="{{ pub.type }}">
